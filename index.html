@@ -12,6 +12,7 @@
 
   <body>
     <header>
+      <h1 class="hidden">C&C Fitness</h1>
       <h2 class="hidden">Main Navigation</h2>
       <section class="navbar">
         <nav>
@@ -34,7 +35,9 @@
           <input type="text" placeholder="search" />
         </article>
       </section>
+    </header>
 
+    <main>
       <section id="welcome">
         <p>Welcome to</p>
         <h2>C&C FITNESS</h2>
@@ -44,18 +47,18 @@
       </section>
 
       <section id="main_content">
-        <h3>FITNESS FOR ALL, WELLNESS FOR ALL</h3>
-        <h4>pump it up</h4>
+        <h2>FITNESS FOR ALL, WELLNESS FOR ALL</h2>
+        <h3>pump it up</h3>
         <p>
           stay motivated and crush your fitness goals with tailored workout
           plans, expert guidance, and a community of like minded friends. join
           in the journey to a happier, healthier, stronger you!
         </p>
-        <img id="large_photo" alt="gym photo" />
+        <img src="img/large_back.jpg" id="large_photo" alt="gym photo" />
 
-        <h4>grow for yourself</h4>
+        <h3>grow for yourself</h3>
 
-        <img id="small_photo" alt="gym photo" />
+        <img src="img/close_up.jpg" id="small_photo" alt="gym photo" />
 
         <p>
           grow into who you want to be, physcially, mentally, and emotionally.
@@ -71,20 +74,64 @@
       <section>
         <h2 class="hidden">photo gallery with wrap text</h2>
         <article class="round_photos">
-          <p>Thinking</p>
-          <img class="round" alt="rounded gym photo" />
+          <div>
+            <img src="img/thinking.jpg" class="round" alt="rounded gym photo" />
+            <p>thinking</p>
+          </div>
 
-          <img class="round" alt="rounded gym photo" />
-          <p>Feeling</p>
+          <div>
+            <img src="img/feeling.jpg" class="round" alt="rounded gym photo" />
+            <p>Feeling</p>
+          </div>
 
-          <p>Willing</p>
-          <img class="round" alt="rounded gym photo" />
+          <div>
+            <img src="img/willing.jpg" class="round" alt="rounded gym photo" />
+            <p>Willing</p>
+          </div>
         </article>
       </section>
 
       <section id="gym_community">
-        <h3>FIND YOUT FEMALE GYM COMMUNITY</h3>
+        <h2>FIND YOUT FEMALE GYM COMMUNITY</h2>
+        <article>
+          <div id="change">
+            <p>change your lifestyle for you</p>
+          </div>
+
+          <div id="physical">
+            <p>physical and mental support</p>
+          </div>
+
+          <div id="find">
+            <p>find exactly what you need</p>
+          </div>
+
+          <div id="personalized">
+            <p>personalized training</p>
+          </div>
+        </article>
+        <h2>CONNECT NOW</h2>
       </section>
-    </header>
+    </main>
+
+    <footer>
+      <h2 class="hidden">footer Navigation</h2>
+      <section class="navbar">
+        <nav>
+          <!-- needs img src-->
+          <a href="home.html">
+            <img id="top-logo" alt="company logo" />
+          </a>
+          <ul>
+            <li><a href="findyourplan.html"> find your plan</a></li>
+            <li><a href="contact.html"> contact</a></li>
+            <li><a href="meet.html"> meet C&C</a></li>
+            <li><a href="events.html"> events</a></li>
+            <li><a href="training.html"> training</a></li>
+            <li><a href="wellness.html"> wellness</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
   </body>
 </html>
