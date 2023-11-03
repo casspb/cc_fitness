@@ -1,3 +1,47 @@
+body {
+  margin: 0px;
+}
+
 .hidden {
   display: none;
+}
+
+#change {
+  color: white;
+  background-color: black;
+  background-image: url(../img/excercise1.jpg);
+  background-repeat: no-repeat;
+  width: 239px;
+  height: 239px;
+  text-align: center;
+}
+
+#physical {
+  color: white;
+  background-color: black;
+  background-image: url(../img/excercise2.jpg);
+  background-repeat: no-repeat;
+  width: 239px;
+  height: 239px;
+  text-align: center;
+}
+
+#find {
+  color: white;
+  background-color: black;
+  background-image: url(../img/excercise3.jpg);
+  background-repeat: no-repeat;
+  width: 239px;
+  height: 239px;
+  text-align: center;
+}
+
+#personalized {
+  color: white;
+  background-color: black;
+  background-image: url(../img/excercise4.jpg);
+  background-repeat: no-repeat;
+  width: 239px;
+  height: 239px;
+  text-align: center;
 }
