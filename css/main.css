@@ -5,6 +5,11 @@ body {
 .hidden {
   display: none;
 }
+#top-logo,
+#footer-logo {
+  height: 100px;
+  width: 100px;
+}
 
 #change {
   color: white;
