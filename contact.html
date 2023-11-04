@@ -3,33 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <title>Contact form</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
   </head>
 
   <body>
-    <form method="post" action="#">
-      <label for="first_name">First Name: </label>
-      <input type="text" name="first_name" id="first_name" />
+    <header>
+      <h1 class="hidden">C&C Fitness</h1>
+      <h2 class="hidden">Main Navigation</h2>
+      <section class="navbar">
+        <nav>
+          <!-- needs img src-->
+          <a href="home.html">
+            <img id="top-logo" alt="company logo" />
+          </a>
+          <ul>
+            <li><a href="findyourplan.html"> find your plan</a></li>
+            <li><a href="contact.html"> contact</a></li>
+            <li><a href="meet.html"> meet C&C</a></li>
+            <li><a href="events.html"> events</a></li>
+            <li><a href="training.html"> training</a></li>
+            <li><a href="wellness.html"> wellness</a></li>
+          </ul>
+        </nav>
+        <h2 class="hidden">Search button</h2>
+        <article class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="search" />
+        </article>
+      </section>
+    </header>
 
-      <br /><br />
+    <section>
+      <h2>connect now</h2>
+      <form method="post" action="#">
+        <label for="first_name">First Name: </label>
+        <input type="text" name="first_name" id="first_name" />
 
-      <label for="last_name">Last Name: </label>
-      <input type="text" name="last_name" id="last_name" />
+        <br /><br />
 
-      <br /><br />
+        <label for="last_name">Last Name: </label>
+        <input type="text" name="last_name" id="last_name" />
 
-      <label for="email">Email: </label>
-      <input type="text" name="email" id="email" />
+        <br /><br />
 
-      <br /><br />
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" />
 
-      <label for="comments">Comments: </label>
-      <textarea name="comments" id="comments">comment here</textarea>
+        <br /><br />
 
-      <br /><br />
+        <label for="comments">Comments: </label>
+        <textarea name="comments" id="comments">comment here</textarea>
 
-      <input type="submit" value="send" />
-      <br /><br />
-      <br /><br />
-    </form>
+        <br /><br />
+
+        <input type="submit" value="send" />
+        <br /><br />
+        <br /><br />
+      </form>
+    </section>
+
+    <footer>
+      <h2 class="hidden">footer Navigation</h2>
+      <section class="navbar">
+        <nav>
+          <!-- needs img src-->
+          <a href="home.html">
+            <img id="footer-logo" alt="company logo" />
+          </a>
+          <ul>
+            <li><a href="findyourplan.html"> find your plan</a></li>
+            <li><a href="contact.html"> contact</a></li>
+            <li><a href="meet.html"> meet C&C</a></li>
+            <li><a href="events.html"> events</a></li>
+            <li><a href="training.html"> training</a></li>
+            <li><a href="wellness.html"> wellness</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
   </body>
 </html>
