@@ -1,12 +1,47 @@
-body {
-  margin: 0px;
+/*css reset*/
+
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .hidden {
   display: none;
 }
+
+body {
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+header {
+  background-color: gray;
+  position: sticky;
+  top: 0;
+}
+
+header nav {
+  background-color: gray;
+  list-style-type: none;
+  display: block;
+}
+
+header nav ul li {
+  margin: 0 8px;
+  display: inline;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
 #top-logo,
 #footer-logo {
+  background-color: white;
   height: 100px;
   width: 100px;
 }
