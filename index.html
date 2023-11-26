@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>C&C Fitness</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/gird.css" type="grid/css" />
+    <link rel="stylesheet" href="css/grid.css" type="grid/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
@@ -12,16 +12,17 @@
   </head>
 
   <body>
-    <header class="grid-con col-span-full" id="header-nav">
+    <header class="grid-con" id="navbar">
       <h1 class="hidden">C&C Fitness</h1>
 
-      <section class="grid-con" id="navbar">
+      <section>
         <h2 class="hidden">Main Navigation</h2>
+
         <nav>
+          <a href="home.html">
+            <img src="img/logo.svg" id="top-logo" alt="company logo" />
+          </a>
           <ul>
-            <a href="home.html">
-              <img src="img/logo.svg" id="top-logo" alt="company logo" />
-            </a>
             <li><a href="findyourplan.html"> find your plan</a></li>
             <li><a href="contact.html"> contact</a></li>
             <li><a href="meet.html"> meet C&C</a></li>
@@ -30,23 +31,12 @@
             <li><a href="wellness.html"> wellness</a></li>
           </ul>
         </nav>
-
-        <article class="search">
-          <h2 class="hidden">Search button</h2>
-          <i class="search" aria-hidden="true"></i>
-          <input type="text" placeholder="search" />
-        </article>
       </section>
     </header>
 
     <main>
-      <section class="grid-con" id="welcome">
-        <h2>welcome to <span>C&C FITNESS</span></h2>
-        <img
-          src="img/temporary_background.jpg"
-          id="intro_photo"
-          alt="close up of female flexing biceps "
-        />
+      <section class="grid-con col-span-full" id="welcome">
+        <h2>Welcome to <span>C&C FITNESS</span></h2>
         <!--<video autoplay>
           <source src="welcomevideo.mp4" type="video/mp4" />
         </video> -->
