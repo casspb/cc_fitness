@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>C&C Fitness</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/grid.css" type="grid/css" />
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
@@ -12,16 +12,18 @@
   </head>
 
   <body>
-    <header class="grid-con grid-span-full" id="navbar">
+    <div class="wrapper">
+    <header class="grid-con col-span-full" id="navbar">
       <h1 class="hidden">C&C Fitness</h1>
 
-      <section>
         <h2 class="hidden">Main Navigation</h2>
 
-        <nav class="grid-con">
-          <a class="col-start-2" href="home.html">
+        <div class="col-start-2 col-span-1">
+          <a href="home.html">
             <img src="img/logo.svg" id="top-logo" alt="company logo" />
           </a>
+        </div>
+          <nav class="col-start-4 col-span-9">
           <ul>
             <li><a href="findyourplan.html"> find your plan</a></li>
             <li><a href="contact.html"> contact</a></li>
@@ -31,11 +33,11 @@
             <li><a href="wellness.html"> wellness</a></li>
           </ul>
         </nav>
-      </section>
+      
     </header>
 
     <main>
-      <section class="grid-con col-span-full" id="welcome">
+      <section id="welcome">
         <h2>Welcome to <span>C&C FITNESS</span></h2>
         <!--<video autoplay>
           <source src="welcomevideo.mp4" type="video/mp4" />
@@ -43,35 +45,40 @@
       </section>
 
       <section class="grid-con" id="main_content">
-        <h2>FITNESS FOR ALL, WELLNESS FOR ALL</h2>
-        <h3 class="col-start-2 col-span-5">pump it up</h3>
-        <p>
+        <h2 class="col-span-full">FITNESS FOR ALL, WELLNESS FOR ALL</h2>
+        <h3 class="col-start-2 col-span-2">pump it up</h3>
+
+        <p class="col-start-2 col-span-4">
           stay motivated and crush your fitness goals with tailored workout
           plans, expert guidance, and a community of like minded friends. join
           in the journey to a happier, healthier, stronger you!
         </p>
-        <img
-          src="img/large_back.jpg"
-          id="large_photo"
-          alt="female flexing back muscle, one bicep up"
-        />
 
+        <img class="col-start-7 col-span-6"
+        src="img/large_back.jpg"
+        id="large_photo"
+        alt="female flexing back muscle, one bicep up"
+      />
+       
+      <img class="col-start-2 col-span-3"
+      src="img/close_up.jpg"
+      id="small_photo"
+      alt="close up of female yelling in excitment"
+    />
+        <div  class="col-start-7 col-span-6">
         <h3>grow for yourself</h3>
-
-        <img
-          src="img/close_up.jpg"
-          id="small_photo"
-          alt="close up of female yelling in excitment"
-        />
 
         <p>
           grow into who you want to be, physcially, mentally, and emotionally.
           Build a relationship with yourself. Have the proper guidance to give
           you the opportunity you've been looking for.
         </p>
+      </div>
       </section>
+  
 
-      <section class="grid-con" id="findyourplan">
+    <div id="plan" class="grid-con">
+      <section class="col-span-full" id="findyourplan">
         <h2 class="hidden">find your plan</h2>
         <a href="findyourplan.html"> find your plan</a>
       </section>
@@ -79,44 +86,47 @@
       <section class="grid-con" id="wrap_photos">
         <h2 class="hidden">thinking, feeling, willing with photos</h2>
 
-        <article>
+        <article class="col-start-1 col-span-3">
+          <p>Thinking</p>
           <img src="img/thinking.jpg" class="round" alt="rounded gym photo" />
-          <h3>thinking</h3>
+        
         </article>
 
-        <article>
+        <article class="col-start-5 col-span-3">
+          <p>Feeling</p>
           <img src="img/feeling.jpg" class="round" alt="rounded gym photo" />
-          <h3>Feeling</h3>
         </article>
 
-        <article>
+        <article class="col-start-9 col-span-3">
+          <p>Willing</p>
           <img src="img/willing.jpg" class="round" alt="rounded gym photo" />
-          <h3>Willing</h3>
+        
         </article>
       </section>
+    </div>
 
-      <section class="grid-con" id="gym_community">
-        <h2>FIND YOUT FEMALE GYM COMMUNITY</h2>
-        <article>
+      <section id="gym_community">
+        <h2 class="col-span-full">FIND YOUT FEMALE GYM COMMUNITY</h2>
+        <article id="values" class="grid-con">
           <h2 class="hidden">C&C values</h2>
-          <div class="values">
+          <div id="change" class="col-start-1 col-span-2">
             <p>change your lifestyle for you</p>
           </div>
 
-          <div class="values">
+          <div id="physical" class="col-start-4 col-span-2">
             <p>physical and mental support</p>
           </div>
 
-          <div class="values">
+          <div id="find" class="col-start-7 col-span-2">
             <p>find exactly what you need</p>
           </div>
 
-          <div class="values">
+          <div id="personalized" class="col-start-10 col-span-2">
             <p>personalized training</p>
           </div>
         </article>
 
-        <article>
+        <article class="grid-con">
           <h2>CONNECT NOW</h2>
           <div class="socialmedia">
             <ion-icon name="logo-instagram"></ion-icon>
@@ -136,11 +146,12 @@
             </a>
           </div>
         </article>
+      </div>
       </section>
     </main>
 
-    <footer>
-      <section class="grid-con" id="footer-nav">
+    <footer class="grid-con">
+      <section id="footer-nav">
         <h2 class="hidden">footer Navigation</h2>
         <nav>
           <a href="home.html">
@@ -165,5 +176,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+  </div>
   </body>
 </html>
