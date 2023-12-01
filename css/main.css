@@ -1,14 +1,13 @@
-
 .hidden {
   display: none;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  color: white;
   height: 100%;
 }
-.wrapper{
+.wrapper {
   width: 1280px;
   margin: 0 auto;
 }
@@ -19,7 +18,7 @@ body {
 }
 
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   position: sticky;
   top: 0;
   height: 50px;
@@ -28,13 +27,14 @@ header {
 #top-logo {
   width: 60px;
   filter: invert(100%);
+  margin-left: -40px;
 }
 
 #navbar {
   padding: 15px;
 }
 
-#navbar ul{
+#navbar ul {
   padding-top: 15px;
 }
 
@@ -42,31 +42,36 @@ header {
   display: inline;
   list-style: none;
   cursor: pointer;
-  margin-right: 40px;
+  margin-right: 20px;
 }
-
 
 #navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  background-color: rgb(230, 79, 137);
+  font-weight: bold;
+  color: black;
+  background-color: #d4e157;
   padding: 5px 10px;
   border-radius: 15px;
 }
 
+.fa-search {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
 #navbar ul li a:hover {
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  color: black;
+  background-color: white;
   border-radius: 15px;
   padding: 5px 10px;
-  text-decoration: underline;
 }
 
 /* Welcome Banner*/
 
 #welcome {
-  background-image: url(../img/temporary_background.jpg);
+  background-image: url(../img/main-background.jpg);
   background-repeat: no-repeat;
   background-color: black;
   text-align: center;
@@ -83,69 +88,134 @@ header {
   text-align: center;
   display: block;
   font-size: 100px;
-  font-style: bold;
-  color: rgb(230, 79, 137);
+  font-weight: bold;
+  color: #d4e157;
 }
 
-#main_content h2{
+#main_content h2 {
   text-align: center;
 }
 
-#main_content h3{
+#main_content h3 {
   text-transform: uppercase;
 }
 
 /* main content*/
-#maincontent{
+main {
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+#maincontent {
   width: 1280px;
   height: 1450px;
 }
 
+#main_content h2 {
+  font-size: 50px;
+  margin-top: 30px;
+  text-decoration: underline #d4e157;
+}
 
+#main_content h3 {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+#pump {
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 30px;
+  width: 340px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+#large_photo {
+  margin-top: -40px;
+  border-radius: 10px;
+}
+
+#grow {
+  margin-left: 60px;
+}
+
+#grow-p {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-right: -60px;
+  padding: 10px 20px;
+}
+
+#small_photo {
+  margin-top: -60px;
+  margin-bottom: 100px;
+}
 
 /* circle images and find your plan box*/
-#plan{
-  background-color: black;
-  color: white;
-  height: 676px;
+#plan {
+  background-color: #d4e157;
+  color: black;
+  height: 500px;
 }
 
 /* find your plan*/
-#findyourplan{
- text-align: center;
- padding-top: 40px;
+#findyourplan {
+  text-align: center;
+  padding-top: 40px;
+  margin-top: -75px;
 }
 
 #findyourplan a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: bold;
   text-transform: uppercase;
-  background-color:  rgb(230, 79, 137) ;
-  padding: 5px 15px;
+  background-color: white;
+  padding: 0px 20px;
   border-radius: 35px;
   font-size: 50px;
 }
 
 /* circle images*/
-.round{
-  border-radius: 170px;
+.round {
+  border-radius: 200px;
   padding: 0 15px;
 }
 
-#wrap_photos p{
+#wrap_photos p {
+  text-transform: uppercase;
+  font-weight: bold;
   text-align: center;
   padding: 10px;
-  font-size: 20px;
-  margin-left: 50px;
+  font-size: 25px;
+  margin-left: 60px;
 }
 
 /* gym community section*/
-#gym_community{
+#gym_community {
   height: 693px;
 }
 
-#gym_community h2{
+#gym_community h2 {
   text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+#values {
+  margin: 20px;
 }
 
 #change {
@@ -157,6 +227,7 @@ header {
   width: 239px;
   height: 239px;
   text-align: center;
+  border-radius: 5px;
 }
 
 #physical {
@@ -168,6 +239,7 @@ header {
   width: 239px;
   height: 239px;
   text-align: center;
+  border-radius: 5px;
 }
 
 #find {
@@ -179,6 +251,7 @@ header {
   width: 239px;
   height: 239px;
   text-align: center;
+  border-radius: 5px;
 }
 
 #personalized {
@@ -190,19 +263,25 @@ header {
   width: 239px;
   height: 239px;
   text-align: center;
+  border-radius: 5px;
 }
 
-
 .socialmedia {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 116px;
+  text-align: center;
+  margin-left: 25px;
 }
 
 .socialmedia:hover {
-  color: rgb(230, 79, 137);
+  color: #d4e157;
 }
 
-#personalized p, #find p {
-  margin-top:100px;
+#personalized p,
+#find p,
+#physical p,
+#change p {
+  margin-top: 100px;
+  color: white;
 }
